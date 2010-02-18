@@ -13,9 +13,14 @@
 		class="net.lifeless.hadoop.control.controller.StatusControlller">
 	</bean>
 
+	<bean id="controller.jobTracker.dashboard"
+		class="net.lifeless.hadoop.control.jobtracker.controller.DashboardController">
+	</bean>
+
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
 		<property name="prefix" value="/WEB-INF/jsp" />
 		<property name="suffix" value=".jsp" />
 	</bean>
