@@ -1,0 +1,35 @@
+Hadoop Control README
+=====================
+
+The purpose of hadoop-control (aka: another poorly named open source project) is
+to rearchitect the Hadoop core web applications around a modern MVC structure on
+top of Spring MVC. Ideally, this would, at some point, be submitted back to the
+ASF to be included in Hadoop proper.
+
+Project hosting is currently at http://github.org/esammer/hadoop-control
+
+This project is actively accepting any contributions and community support.
+
+Build
+
+    Hadoop Control currently uses Maven as its build system.
+    
+    # mvn package
+    
+    Should produce a reasonable working package (by the end of 0.0.1) in the
+    form of a war file.
+
+Roadmap
+
+    0.0.1:
+        - Bootstrap a skeletal UI for the Job Tracker.
+        - Figure out how to, with minimal disruption, integrate with the
+          existing Hadoop code base. (Possibly defer actual integration until
+          the code reaches a reasonable point.)
+        - Create stubs for the JobTracker, Configuration, ClusterMetics, and
+          other core Hadoop objects to facilitate testing and prototyping.
+        - Build community support.
+
+Authors
+
+    E. Sammer <eric@lifeless.net>
