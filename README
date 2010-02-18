@@ -30,6 +30,32 @@ Roadmap
           other core Hadoop objects to facilitate testing and prototyping.
         - Build community support.
 
+FAQ
+
+    Q: Why use Spring? What about license issues?
+    A: Spring 3 is open source, licensed under APLv2, known by many Java devs,
+       is one of the nicer frameworks for web MVC apps and REST services.
+
+    Q: How does this fit in with the Hadoop core code base?
+    A: After some research into the way the web apps are bootstraped in Hadoop,
+       I found we can probably get away with building one or more wars and then
+       make small modifications to the existing Jetty code to load them rather
+       than the exploded JSP directories currently in the source. This also
+       breaks the web apps out of the code base proper further simplifying
+       builds and even allowing some folks to simply not deploy them at all.
+
+    Q: So are you aiming to replace all of the web UIs as well as the servlets
+       used to vend mapper outputs, etc.?
+    A: Only the UIs for now. The servlets and code vending the mapper outputs
+       and other RPC-ish HTTP stuff is far more "mission critical" and simpler
+       in business logic and benefits less from what this project is set out to
+       do.
+
+    Q: What set this off?
+    A: There's little (no?) input validation, proper handling of URL encoding
+       / decoding, ability to inject authentication services, etc. It's
+       something to do. ;)
+
 Authors
 
     E. Sammer <eric@lifeless.net>
