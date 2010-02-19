@@ -9,10 +9,6 @@
 
 	<mvc:annotation-driven />
 
-	<bean id="controllerStatus"
-		class="net.lifeless.hadoop.control.controller.StatusControlller">
-	</bean>
-
 	<bean id="controller.jobTracker.dashboard"
 		class="net.lifeless.hadoop.control.jobtracker.controller.DashboardController">
 	</bean>
