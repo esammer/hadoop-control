@@ -5,6 +5,7 @@
 	<groupId>net.lifeless</groupId>
 	<artifactId>net.lifeless.hadoop-control</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>Hadoop Control</name>
 	<description>A set of services and UIs for controlling Hadoop clusters</description>
 
