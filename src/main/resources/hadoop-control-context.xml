@@ -10,8 +10,9 @@
 	<mvc:annotation-driven />
 
 	<bean id="controller.jobTracker.dashboard"
-		class="net.lifeless.hadoop.control.jobtracker.controller.DashboardController">
-	</bean>
+		class="net.lifeless.hadoop.control.jobtracker.controller.DashboardController" />
+
+	<bean id="controller.error" class="net.lifeless.hadoop.control.ErrorController" />
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
